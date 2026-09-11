@@ -11,6 +11,8 @@ import '../../features/profile/presentation/screens/documents_screen.dart';
 import '../../features/profile/presentation/screens/profile_screen.dart';
 import '../../features/shell/presentation/app_shell.dart';
 import '../../features/turfs/presentation/screens/court_form_screen.dart';
+import '../../features/turfs/presentation/screens/operating_hours_screen.dart';
+import '../../features/turfs/presentation/screens/pricing_rules_screen.dart';
 import '../../features/turfs/presentation/screens/create_turf_screen.dart';
 import '../../features/turfs/presentation/screens/turf_detail_screen.dart';
 import '../../features/turfs/presentation/screens/turf_list_screen.dart';
@@ -80,6 +82,22 @@ final routerProvider = Provider<GoRouter>((ref) {
                           turfId: state.pathParameters['turfId']!,
                           courtId: state.pathParameters['courtId'],
                         ),
+                        routes: [
+                          GoRoute(
+                            path: 'operating-hours',
+                            builder: (context, state) => OperatingHoursScreen(
+                              turfId: state.pathParameters['turfId']!,
+                              courtId: state.pathParameters['courtId']!,
+                            ),
+                          ),
+                          GoRoute(
+                            path: 'pricing',
+                            builder: (context, state) => PricingRulesScreen(
+                              turfId: state.pathParameters['turfId']!,
+                              courtId: state.pathParameters['courtId']!,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

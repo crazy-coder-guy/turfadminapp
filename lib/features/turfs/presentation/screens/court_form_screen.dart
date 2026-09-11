@@ -380,6 +380,30 @@ class _CourtFormScreenState extends ConsumerState<CourtFormScreen> {
                     editable: _canEditMedia,
                     onChanged: _reloadMedia,
                   ),
+                  const SizedBox(height: 28),
+                  const Text(
+                    'MARKETPLACE SETTINGS',
+                    style: TextStyle(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w700,
+                      color: Color(0xFF94A3B8),
+                      letterSpacing: 1.0,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  AppButton(
+                    label: 'Operating Hours',
+                    variant: AppButtonVariant.outline,
+                    icon: Icons.schedule_outlined,
+                    onPressed: () => context.go('/turfs/${widget.turfId}/courts/${widget.courtId}/operating-hours'),
+                  ),
+                  const SizedBox(height: 10),
+                  AppButton(
+                    label: 'Pricing',
+                    variant: AppButtonVariant.outline,
+                    icon: Icons.payments_outlined,
+                    onPressed: () => context.go('/turfs/${widget.turfId}/courts/${widget.courtId}/pricing'),
+                  ),
                 ],
                 const SizedBox(height: 36),
                 AppButton(
