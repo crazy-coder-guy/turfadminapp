@@ -1,4 +1,4 @@
-package com.turfplatform.turf_admin_app
+package com.kourt.admin
 
 import io.flutter.embedding.android.FlutterActivity
 

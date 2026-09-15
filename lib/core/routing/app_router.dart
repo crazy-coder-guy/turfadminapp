@@ -16,6 +16,7 @@ import '../../features/turfs/presentation/screens/pricing_rules_screen.dart';
 import '../../features/turfs/presentation/screens/create_turf_screen.dart';
 import '../../features/turfs/presentation/screens/turf_detail_screen.dart';
 import '../../features/turfs/presentation/screens/turf_list_screen.dart';
+import '../firebase/analytics_service.dart';
 import 'go_router_refresh_notifier.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
@@ -24,6 +25,7 @@ final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
     initialLocation: '/splash',
     refreshListenable: refreshNotifier,
+    observers: [ref.watch(firebaseAnalyticsObserverProvider)],
     redirect: (context, state) {
       final authState = ref.read(authControllerProvider);
       final isSplash = state.matchedLocation == '/splash';

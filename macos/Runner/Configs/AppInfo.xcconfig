@@ -8,7 +8,7 @@
 PRODUCT_NAME = turf_admin_app
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.turfplatform.turfAdminApp
+PRODUCT_BUNDLE_IDENTIFIER = com.kourt.admin
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2026 com.turfplatform. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2026 com.kourt. All rights reserved.

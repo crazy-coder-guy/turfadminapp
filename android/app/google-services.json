@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "21312574184",
+    "project_id": "kourt-b8de6",
+    "storage_bucket": "kourt-b8de6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21312574184:android:d0473b9ba801880e36af5d",
+        "android_client_info": {
+          "package_name": "com.kourt.admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOcp0ElpWgNLxHJruliGasoK_pk-9zyU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21312574184:android:400932f92d6dd7a436af5d",
+        "android_client_info": {
+          "package_name": "com.kourt.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOcp0ElpWgNLxHJruliGasoK_pk-9zyU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
